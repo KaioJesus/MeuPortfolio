@@ -1,3 +1,52 @@
 html, body {
   font-family: "Raleway", sans-serif;
+  padding: 0.7rem 0.5rem;
+}
+
+header .nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+header .nav__container h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+header .nav__container h1::before {
+  content: url(../../../assets/img/icon/auto_awesome_black_24dp\ 1.svg);
+}
+
+.introducao {
+  padding: 1rem 0;
+}
+.introducao img {
+  width: 98px;
+  height: 98px;
+}
+.introducao h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.introducao p {
+  padding: 1rem 0;
+}
+.introducao .lista__redes-sociais {
+  display: flex;
+  justify-content: space-evenly;
+}
+.introducao .lista__redes-sociais li a {
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+.introducao .lista__redes-sociais li a::after {
+  content: url(../../../assets/img/icon/Vector.svg);
+  margin-left: 0.3rem;
+}
+.introducao .lista__redes-sociais li a:active {
+  color: black;
 }/*# sourceMappingURL=style.css.map */

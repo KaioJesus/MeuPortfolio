@@ -1,0 +1,19 @@
+@import '../abstract/variaveis';
+
+header{
+    .nav__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        h1{
+            font-size: $titulo-nome;
+            font-weight: $peso-titulo;
+
+            &::before{
+                content: url(../../../assets/img/icon/auto_awesome_black_24dp\ 1.svg);
+            }
+        }
+        margin-bottom: 2rem;
+    }
+}

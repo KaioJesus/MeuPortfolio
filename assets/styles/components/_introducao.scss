@@ -1,0 +1,45 @@
+.introducao{
+    padding: 1rem 0;
+    img{
+        width: 98px;
+        height: 98px;
+    }
+
+    h2{
+        font-size: $titulo;
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+
+    p{
+        padding: 1rem 0;
+        // line-height: 1.2rem;
+    }
+
+    .lista__redes-sociais{
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+        li a{
+            font-size: $texto-padrao;
+            text-decoration: none;
+            font-weight: $peso-link;
+            color: $cor-link;
+            cursor: pointer;
+
+            &::after{
+            content: url(../../../assets/img/icon/Vector.svg);
+            margin-left: 0.3rem;
+            
+            }
+
+            &:active{
+                color: $cor-link;
+            }
+        }
+
+    //    a{
+    //     }
+    }
+}
