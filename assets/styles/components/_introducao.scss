@@ -1,13 +1,15 @@
+@import '../abstract/variaveis';
+
 .introducao{
     padding: 1rem 1rem;
+    background-color: $cor-de-fundo-gelo;
     img{
         width: 98px;
         height: 98px;
     }
 
     h2{
-        font-size: $titulo;
-        font-weight: 700;
+        @include padrao-h2;
         margin-top: 1rem;
     }
 

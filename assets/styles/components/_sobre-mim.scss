@@ -1,11 +1,12 @@
+@import '../abstract/variaveis';
+
 .sobre-mim{
-    padding: 1.4rem 1rem;
+    padding: 1.0rem 1rem;
 
     background-color: $cor-de-fundo-azul;
 
     h2{
-        font-size: $titulo;
-        font-weight: $peso-titulo;
+        @include padrao-h2;
     }
 
     p{

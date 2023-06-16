@@ -1,15 +1,15 @@
 @import '../abstract/variaveis';
 
 header{
-    padding: 1.4rem 1rem;
+    background-color: $cor-de-fundo-gelo;
+    padding: 1rem 1rem;
     .nav__container{
         display: flex;
         justify-content: space-between;
         align-items: center;
     
         h1{
-            font-size: $titulo-nome;
-            font-weight: $peso-titulo;
+            @include padrao-h2;
 
             &::before{
                 content: url(../../../assets/img/icon/auto_awesome_black_24dp\ 1.svg);

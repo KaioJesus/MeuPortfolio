@@ -1,9 +1,15 @@
 html, body {
   font-family: "Raleway", sans-serif;
+  color: #464646;
+}
+
+.skills-e-hobbies, .formacao-academica, .experiencia-profissional, .contato, footer {
+  padding: 1em 1em;
 }
 
 header {
-  padding: 1.4rem 1rem;
+  background-color: #fffafa;
+  padding: 1rem 1rem;
 }
 header .nav__container {
   display: flex;
@@ -21,13 +27,14 @@ header .nav__container h1::before {
 
 .introducao {
   padding: 1rem 1rem;
+  background-color: #fffafa;
 }
 .introducao img {
   width: 98px;
   height: 98px;
 }
 .introducao h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-top: 1rem;
 }
@@ -54,13 +61,40 @@ header .nav__container h1::before {
 }
 
 .sobre-mim {
-  padding: 1.4rem 1rem;
+  padding: 1rem 1rem;
   background-color: #EAF2FD;
 }
 .sobre-mim h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .sobre-mim p {
   padding: 0.5rem 0;
+}
+
+.skills-e-hobbies {
+  background-color: #fffafa;
+}
+.skills-e-hobbies h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.skills-e-hobbies .skills-ferramentas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 1.3rem;
+       column-gap: 1.3rem;
+  row-gap: 1.7rem;
+  font-weight: 700;
+}
+.skills-e-hobbies .skills-ferramentas .lista-item__redes-sociais {
+  background-color: white;
+  width: 90%;
+  height: 140px;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 1px 1px #CCC;
+  padding: 0 0.7rem;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

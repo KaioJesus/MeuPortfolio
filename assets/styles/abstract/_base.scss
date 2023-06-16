@@ -1,6 +1,17 @@
 @import './variaveis';
 
 html, body{
-    font-family: $fonte;
-    
+    font-family: $fonte;   
+    color: #464646;
+}
+
+//função para padronizar o título
+
+.skills-e-hobbies, .formacao-academica, .experiencia-profissional, .contato, footer{
+    padding: 1em 1em;
+}
+
+@mixin padrao-h2{
+    font-size: $titulo-nome;
+    font-weight: $peso-titulo;
 }
