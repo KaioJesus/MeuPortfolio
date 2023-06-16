@@ -1,5 +1,5 @@
 .introducao{
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     img{
         width: 98px;
         height: 98px;
@@ -21,25 +21,25 @@
         justify-content: space-evenly;
         
         
-        li a{
-            font-size: $texto-padrao;
-            text-decoration: none;
-            font-weight: $peso-link;
-            color: $cor-link;
-            cursor: pointer;
-
-            &::after{
-            content: url(../../../assets/img/icon/Vector.svg);
-            margin-left: 0.3rem;
-            
-            }
-
-            &:active{
+        li {
+            a{
+                font-size: $texto-padrao;
+                text-decoration: none;
+                font-weight: $peso-link;
                 color: $cor-link;
-            }
-        }
+                cursor: pointer;
+    
+                &::after{
+                content: url(../../../assets/img/icon/Vector.svg);
+                margin-left: 0.3rem;
+                }
+                
+                &:active{
+                    color: $cor-link;
+                }
 
-    //    a{
-    //     }
+            }
+
+        }
     }
 }

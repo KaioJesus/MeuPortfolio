@@ -1,8 +1,10 @@
 html, body {
   font-family: "Raleway", sans-serif;
-  padding: 0.7rem 0.5rem;
 }
 
+header {
+  padding: 1.4rem 1rem;
+}
 header .nav__container {
   display: flex;
   justify-content: space-between;
@@ -18,7 +20,7 @@ header .nav__container h1::before {
 }
 
 .introducao {
-  padding: 1rem 0;
+  padding: 1rem 1rem;
 }
 .introducao img {
   width: 98px;
@@ -49,4 +51,16 @@ header .nav__container h1::before {
 }
 .introducao .lista__redes-sociais li a:active {
   color: black;
+}
+
+.sobre-mim {
+  padding: 1.4rem 1rem;
+  background-color: #EAF2FD;
+}
+.sobre-mim h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.sobre-mim p {
+  padding: 0.5rem 0;
 }/*# sourceMappingURL=style.css.map */

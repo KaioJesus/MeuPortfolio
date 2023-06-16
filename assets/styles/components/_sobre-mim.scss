@@ -1,3 +1,15 @@
 .sobre-mim{
+    padding: 1.4rem 1rem;
+
     background-color: $cor-de-fundo-azul;
+
+    h2{
+        font-size: $titulo;
+        font-weight: $peso-titulo;
+    }
+
+    p{
+        padding: 0.5rem 0;
+    }
+   
 }
