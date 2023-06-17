@@ -95,6 +95,30 @@ header .nav__container h1::before {
   height: 140px;
   border-radius: 0.3rem;
   box-shadow: 1px 1px 1px 1px #CCC;
-  padding: 0 0.7rem;
-  margin: 0 auto;
+  padding: 4rem 0.7rem 0 0.7rem;
+  box-sizing: border-box;
+  line-height: 1.3rem;
+}
+
+.formacao-academica {
+  background-color: #EAF2FD;
+}
+.formacao-academica h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.formacao-academica div {
+  padding: 1rem 1.5rem;
+  line-height: 1.2rem;
+}
+.formacao-academica div img {
+  width: 100%;
+}
+.formacao-academica div p:nth-child(1) {
+  font-weight: 700;
+}
+.formacao-academica div p:nth-child(2) {
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
