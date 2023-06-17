@@ -102,23 +102,99 @@ header .nav__container h1::before {
 
 .formacao-academica {
   background-color: #EAF2FD;
+  padding: 1rem 1rem;
 }
 .formacao-academica h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   text-align: center;
 }
 .formacao-academica div {
   padding: 1rem 1.5rem;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
 }
 .formacao-academica div img {
   width: 100%;
 }
-.formacao-academica div p:nth-child(1) {
+.formacao-academica div h3 {
   font-weight: 700;
 }
-.formacao-academica div p:nth-child(2) {
+.formacao-academica div p {
   font-weight: 500;
+}
+
+.experiencia-profissional {
+  padding: 2rem 2rem;
+  background-color: #fffafa;
+}
+.experiencia-profissional h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+.experiencia-profissional div {
+  line-height: 1.5rem;
+}
+.experiencia-profissional div img {
+  width: 100%;
+}
+.experiencia-profissional div h3 {
+  font-weight: 700;
+}
+.experiencia-profissional div p {
+  font-size: 14px;
+}
+.experiencia-profissional div div {
+  margin: 1rem 0;
+}
+.experiencia-profissional div div a {
+  text-decoration: none;
+  padding: 0.6rem 0.4rem;
+  margin: 0 0.5rem 0 0;
+  color: #2A7AE4;
+  background-color: white;
+  border: 1px solid #2A7AE4;
+}
+
+.contato {
+  background-color: #EAF2FD;
+  padding: 1rem 2rem;
+}
+.contato h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.contato p {
+  padding: 1rem 0;
+}
+.contato input {
+  display: block;
+  width: 90%;
+  height: 3rem;
+  margin: 1rem auto;
+  border-radius: 0.3rem;
+  border: none;
+}
+.contato input::-moz-placeholder {
+  padding: 0.5rem;
+  font-size: 12px;
+}
+.contato input::placeholder {
+  padding: 0.5rem;
+  font-size: 12px;
+}
+.contato textarea {
+  display: block;
+  width: 90%;
+  margin: 1rem auto;
+  border-radius: 0.3rem;
+  border: none;
+}
+.contato button {
+  color: white;
+  background-color: #2A7AE4;
+  width: 5rem;
+  height: 2rem;
 }/*# sourceMappingURL=style.css.map */
