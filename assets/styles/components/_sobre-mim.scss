@@ -5,11 +5,11 @@
 
     background-color: $cor-de-fundo-azul;
 
-    h2{
+    .sobre-mim__titulo{
         @include padrao-h2;
     }
 
-    p{
+    .sobre-mim__descricao{
         padding: 0.5rem 0;
     }
    

@@ -12,9 +12,10 @@
     .skills-ferramentas{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 1.3rem;
+        // column-gap: 1.3rem;
         row-gap: 1.7rem;
         font-weight: 700;
+        justify-content: space-between;
 
         .lista-item__redes-sociais{
          

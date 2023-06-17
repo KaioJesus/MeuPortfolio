@@ -3,28 +3,29 @@
 .introducao{
     padding: 1rem 1rem;
     background-color: $cor-de-fundo-gelo;
-    img{
+    .introducao__img{
         width: 98px;
         height: 98px;
     }
 
-    h2{
+    .introducao__titulo{
         @include padrao-h2;
         margin-top: 1rem;
     }
 
-    p{
+    .introducao__descricao{
         padding: 1rem 0;
         // line-height: 1.2rem;
     }
 
-    .lista__redes-sociais{
+    .lista-redes-sociais{
         display: flex;
         justify-content: space-evenly;
         
         
-        li {
-            a{
+        .item-lista-redes-sociais {
+
+            .link-lista-redes-sociais{
                 font-size: $texto-padrao;
                 text-decoration: none;
                 font-weight: $peso-link;
@@ -39,9 +40,9 @@
                 &:active{
                     color: $cor-link;
                 }
-
+    
             }
-
+            
         }
     }
 }

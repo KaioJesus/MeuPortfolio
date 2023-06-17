@@ -1,20 +1,20 @@
 @import '../abstract/variaveis';
 
-header{
+.cabecalho{
     background-color: $cor-de-fundo-gelo;
     padding: 1rem 1rem;
     .nav__container{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 2rem;
     
-        h1{
+        .nav__titulo{
             @include padrao-h2;
 
             &::before{
                 content: url(../../../assets/img/icon/auto_awesome_black_24dp\ 1.svg);
             }
         }
-        margin-bottom: 2rem;
     }
 }
