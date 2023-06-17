@@ -4,8 +4,8 @@
     padding: 1rem 1rem;
     background-color: $cor-de-fundo-gelo;
     .introducao__img{
-        width: 98px;
-        height: 98px;
+        width: 6.125rem;
+        height: 6.125rem;
     }
 
     .introducao__titulo{
@@ -44,5 +44,18 @@
             }
             
         }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .introducao{
+        .introducao__img{
+            float: right;
+            width: 10rem;
+            height: 10rem;
+            padding: 0 2rem;
+        }
+        padding: 2rem 2rem;
     }
 }

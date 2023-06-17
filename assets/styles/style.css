@@ -3,13 +3,17 @@ html, body {
   color: #464646;
 }
 
-.skills-e-hobbies, .formacao-academica, .experiencia-profissional, .contato, footer {
-  padding: 1em 1em;
+.cabecalho, .skills-e-hobbies, .formacao-academica, .experiencia-profissional, .contato, footer {
+  padding: 1rem 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .cabecalho, .introducao, .sobre-mim, .skills-e-hobbies, .formacao-academica, .experiencia-profissional, .contato, .rodape {
+    padding: 1rem 2rem;
+  }
+}
 .cabecalho {
   background-color: #fffafa;
-  padding: 1rem 1rem;
 }
 .cabecalho .nav__container {
   display: flex;
@@ -24,14 +28,17 @@ html, body {
 .cabecalho .nav__container .nav__titulo::before {
   content: url(../../../assets/img/icon/auto_awesome_black_24dp\ 1.svg);
 }
+.cabecalho .nav__container .nav__email {
+  font-weight: 700;
+}
 
 .introducao {
   padding: 1rem 1rem;
   background-color: #fffafa;
 }
 .introducao .introducao__img {
-  width: 98px;
-  height: 98px;
+  width: 6.125rem;
+  height: 6.125rem;
 }
 .introducao .introducao__titulo {
   font-size: 1.5rem;
@@ -60,6 +67,17 @@ html, body {
   color: black;
 }
 
+@media screen and (min-width: 768px) {
+  .introducao {
+    padding: 2rem 2rem;
+  }
+  .introducao .introducao__img {
+    float: right;
+    width: 10rem;
+    height: 10rem;
+    padding: 0 2rem;
+  }
+}
 .sobre-mim {
   padding: 1rem 1rem;
   background-color: #EAF2FD;
@@ -72,6 +90,11 @@ html, body {
   padding: 0.5rem 0;
 }
 
+@media screen and (min-width: 768px) {
+  .sobre-mim {
+    padding: 1rem 2rem;
+  }
+}
 .skills-e-hobbies {
   background-color: #fffafa;
 }
@@ -99,30 +122,42 @@ html, body {
   line-height: 1.3rem;
 }
 
+@media screen and (min-width: 768px) {
+  .skills-e-hobbies .skills-ferramentas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .formacao-academica {
   background-color: #EAF2FD;
   padding: 1rem 1rem;
 }
-.formacao-academica h2 {
+.formacao-academica .formacao-academica__titulo {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 1rem 0;
   text-align: center;
 }
-.formacao-academica div {
+.formacao-academica .formacao-academica__div-instituicao {
   padding: 1rem 1.5rem;
   line-height: 1.5rem;
 }
-.formacao-academica div img {
+.formacao-academica .formacao-academica__div-instituicao .div-instituicao__img {
   width: 100%;
 }
-.formacao-academica div h3 {
+.formacao-academica .formacao-academica__div-instituicao .div-instituicao__titulo {
   font-weight: 700;
 }
-.formacao-academica div p {
+.formacao-academica .formacao-academica__div-instituicao .div-instituicao__descricao {
   font-weight: 500;
 }
 
+@media screen and (min-width: 768px) {
+  .formacao-academica .formacao-academica__div-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .experiencia-profissional {
   padding: 2rem 2rem;
   background-color: #fffafa;
@@ -167,6 +202,7 @@ html, body {
 }
 .contato p {
   padding: 1rem 0;
+  line-height: 1.2rem;
 }
 .contato input {
   display: block;
@@ -179,10 +215,12 @@ html, body {
 .contato input::-moz-placeholder {
   padding: 0.5rem;
   font-size: 12px;
+  color: #A2A2A2;
 }
 .contato input::placeholder {
   padding: 0.5rem;
   font-size: 12px;
+  color: #A2A2A2;
 }
 .contato textarea {
   display: block;
@@ -190,6 +228,16 @@ html, body {
   margin: 1rem auto;
   border-radius: 0.3rem;
   border: none;
+}
+.contato textarea::-moz-placeholder {
+  padding: 0.5rem;
+  font-size: 12px;
+  color: #A2A2A2;
+}
+.contato textarea::placeholder {
+  padding: 0.5rem;
+  font-size: 12px;
+  color: #A2A2A2;
 }
 .contato button {
   color: white;

@@ -4,29 +4,40 @@
     background-color: $cor-de-fundo-azul;
     padding: 1rem 1rem;
 
-    h2{
+    .formacao-academica__titulo{
         @include padrao-h2;
         padding: 1rem 0;
         text-align: center;
     }
 
-    div{
+    .formacao-academica__div-instituicao{
         padding: 1rem 1.5rem;
         line-height: 1.5rem;
-        img{
+        
+        .div-instituicao__img{
             width: 100%;
         }
 
-        h3{
+        .div-instituicao__titulo{
             
             font-weight: 700;
             
         }
 
-        p{
+        .div-instituicao__descricao{
            
             font-weight: 500;
             
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .formacao-academica{
+        .formacao-academica__div-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
