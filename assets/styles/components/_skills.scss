@@ -3,7 +3,7 @@
 .skills-e-hobbies{
     background-color: $cor-de-fundo-gelo;
     
-    h2{
+    .skills__titulo{
         @include padrao-h2;
         padding-bottom: 1rem;
         text-align: center;
@@ -38,6 +38,21 @@
         .skills-ferramentas{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .skills-e-hobbies{
+
+        .skills__titulo{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .skills-ferramentas{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         }
     }
 }

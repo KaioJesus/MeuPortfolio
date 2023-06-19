@@ -3,6 +3,7 @@
 .experiencia-profissional{
     padding: 2rem 2rem;
     background-color: $cor-de-fundo-gelo;
+    height: fit-content;
     
     .experiencia__titulo{
         @include padrao-h2;
@@ -56,5 +57,24 @@
             }
          
         } 
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .experiencia-profissional{
+        padding: 2rem 9.5rem;
+
+        .experiencia__titulo{
+           font-size: 2rem;
+           margin: 1rem 0;
+
+        }
+        .experiencia__div-principal{
+            display: grid;
+            grid-template-columns: 1.5fr 0.5fr;
+            align-items: center;
+            gap: 1rem;
+
+        }
     }
 }

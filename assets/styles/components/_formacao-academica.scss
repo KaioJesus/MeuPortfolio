@@ -41,3 +41,22 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+
+    .formacao-academica{
+        padding: 4rem 0;
+        .formacao-academica__titulo{
+            font-size: 2rem;
+        }
+        .formacao-academica__div-container{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .div-instituicao__img{
+                width: 100%;
+            }
+        } 
+    }
+}

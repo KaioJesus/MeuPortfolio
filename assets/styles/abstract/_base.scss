@@ -22,3 +22,11 @@ html, body{
     }
 
 }
+
+@media screen and (min-width: 1440px) {
+    .cabecalho, .introducao, .sobre-mim, .skills-e-hobbies, .formacao-academica, .experiencia-profissional, .contato, .rodape{
+        padding: 2rem 9.5rem 4rem;
+    }
+
+}
+
