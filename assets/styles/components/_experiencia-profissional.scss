@@ -4,38 +4,57 @@
     padding: 2rem 2rem;
     background-color: $cor-de-fundo-gelo;
     
-    h2{
+    .experiencia__titulo{
         @include padrao-h2;
         padding-bottom: 1.5rem;
         text-align: center;
     }
 
-    div{
+    .experiencia__div-principal{
 
         line-height: 1.5rem;
-        img{
+        .experiencia__iamgem{
             width: 100%;
         }
 
-        h3{
+        .experiencia__titulo-desafio{
             font-weight: 700;
         }
 
-        p{
+        .experiencia__descricao{
             font-size: 14px;
         }
 
-        div{
+        .experiencia__div-secundaria{
             margin: 1rem 0;
-            a{
+            .experiencia__link {
                 text-decoration: none;
                 padding: 0.6rem 0.4rem;
                 margin: 0 0.5rem 0 0;
+                
+                
+            }
+            
+            .repositorio{
+                border: 1px solid #2A7AE4;;
                 color: #2A7AE4;
                 background-color: white;
-                border: 1px solid #2A7AE4;;
-
+                &:hover{
+                    background-color: rgb(215, 211, 211);
+                    transition: .3s ease-in;
+                }
+                
             }
+
+            .deploy{
+                color: white;
+                background-color: #2A7AE4;
+                &:hover{
+                    background-color: #064598;
+                    transition: .3s ease-in;
+                }
+            }
+         
         } 
     }
 }

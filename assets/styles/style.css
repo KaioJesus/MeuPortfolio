@@ -68,9 +68,6 @@ html, body {
 }
 
 @media screen and (min-width: 768px) {
-  .introducao {
-    padding: 2rem 2rem;
-  }
   .introducao .introducao__img {
     float: right;
     width: 10rem;
@@ -162,84 +159,100 @@ html, body {
   padding: 2rem 2rem;
   background-color: #fffafa;
 }
-.experiencia-profissional h2 {
+.experiencia-profissional .experiencia__titulo {
   font-size: 1.5rem;
   font-weight: 700;
   padding-bottom: 1.5rem;
   text-align: center;
 }
-.experiencia-profissional div {
+.experiencia-profissional .experiencia__div-principal {
   line-height: 1.5rem;
 }
-.experiencia-profissional div img {
+.experiencia-profissional .experiencia__div-principal .experiencia__iamgem {
   width: 100%;
 }
-.experiencia-profissional div h3 {
+.experiencia-profissional .experiencia__div-principal .experiencia__titulo-desafio {
   font-weight: 700;
 }
-.experiencia-profissional div p {
+.experiencia-profissional .experiencia__div-principal .experiencia__descricao {
   font-size: 14px;
 }
-.experiencia-profissional div div {
+.experiencia-profissional .experiencia__div-principal .experiencia__div-secundaria {
   margin: 1rem 0;
 }
-.experiencia-profissional div div a {
+.experiencia-profissional .experiencia__div-principal .experiencia__div-secundaria .experiencia__link {
   text-decoration: none;
   padding: 0.6rem 0.4rem;
   margin: 0 0.5rem 0 0;
+}
+.experiencia-profissional .experiencia__div-principal .experiencia__div-secundaria .repositorio {
+  border: 1px solid #2A7AE4;
   color: #2A7AE4;
   background-color: white;
-  border: 1px solid #2A7AE4;
+}
+.experiencia-profissional .experiencia__div-principal .experiencia__div-secundaria .repositorio:hover {
+  background-color: rgb(215, 211, 211);
+  transition: 0.3s ease-in;
+}
+.experiencia-profissional .experiencia__div-principal .experiencia__div-secundaria .deploy {
+  color: white;
+  background-color: #2A7AE4;
+}
+.experiencia-profissional .experiencia__div-principal .experiencia__div-secundaria .deploy:hover {
+  background-color: #064598;
+  transition: 0.3s ease-in;
 }
 
 .contato {
   background-color: #EAF2FD;
   padding: 1rem 2rem;
 }
-.contato h2 {
+.contato .contato__titulo {
   font-size: 1.5rem;
   font-weight: 700;
 }
-.contato p {
+.contato .contato__descricao {
   padding: 1rem 0;
   line-height: 1.2rem;
 }
-.contato input {
+.contato .contato__input {
   display: block;
   width: 100%;
   height: 3rem;
   margin: 1rem auto;
   border-radius: 0.3rem;
   border: none;
+  padding: 0 1rem;
 }
-.contato input::-moz-placeholder {
+.contato .contato__input::-moz-placeholder {
   padding: 0.5rem;
   font-size: 12px;
   color: #A2A2A2;
 }
-.contato input::placeholder {
+.contato .contato__input::placeholder {
   padding: 0.5rem;
   font-size: 12px;
   color: #A2A2A2;
 }
-.contato textarea {
+.contato .contato__textarea {
   display: block;
   width: 100%;
   margin: 1rem auto;
   border-radius: 0.3rem;
   border: none;
+  padding: 0 1rem;
 }
-.contato textarea::-moz-placeholder {
+.contato .contato__textarea::-moz-placeholder {
   padding: 0.5rem;
   font-size: 12px;
   color: #A2A2A2;
 }
-.contato textarea::placeholder {
+.contato .contato__textarea::placeholder {
   padding: 0.5rem;
   font-size: 12px;
   color: #A2A2A2;
 }
-.contato button {
+.contato .contato__button {
   color: white;
   background-color: #2A7AE4;
   width: 8rem;
