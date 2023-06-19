@@ -4,6 +4,10 @@
     background-color: $cor-de-fundo-azul;
     padding: 1rem 2rem;
 
+    .contato__imagem{
+        display: none;
+    }
+
     .contato__titulo{
         @include padrao-h2;
     }
@@ -52,4 +56,37 @@
         height:3rem;
     }
 
+}
+
+@media screen and (min-width: 1440px) {
+    .contato{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+       
+        .contato__titulo{
+        font-size: 32px;
+        }
+        
+     
+        .contato__imagem{
+            display: inline-block;
+        }
+        .contato__input{
+            margin-bottom: 2rem;
+        }
+
+        .contato__button{
+            border: none;
+            &:hover{
+                cursor: pointer;
+                background-color: #12417e;
+                transition: .2s;
+
+            }
+        }
+    }
+    
 }

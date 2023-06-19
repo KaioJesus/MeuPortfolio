@@ -287,6 +287,9 @@ html, body {
   background-color: #EAF2FD;
   padding: 1rem 2rem;
 }
+.contato .contato__imagem {
+  display: none;
+}
 .contato .contato__titulo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -339,6 +342,31 @@ html, body {
   height: 3rem;
 }
 
+@media screen and (min-width: 1440px) {
+  .contato {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .contato .contato__titulo {
+    font-size: 32px;
+  }
+  .contato .contato__imagem {
+    display: inline-block;
+  }
+  .contato .contato__input {
+    margin-bottom: 2rem;
+  }
+  .contato .contato__button {
+    border: none;
+  }
+  .contato .contato__button:hover {
+    cursor: pointer;
+    background-color: #12417e;
+    transition: 0.2s;
+  }
+}
 .rodape {
   padding: 1rem 2rem;
 }
