@@ -5,6 +5,14 @@ html, body{
     color: #464646;
 }
 
+body{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 //função para padronizar o título
 
 .cabecalho, .skills-e-hobbies, .formacao-academica, .experiencia-profissional, .contato, footer{

@@ -3,6 +3,14 @@ html, body {
   color: #464646;
 }
 
+body {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .cabecalho, .skills-e-hobbies, .formacao-academica, .experiencia-profissional, .contato, footer {
   padding: 1rem 1rem;
 }
@@ -33,10 +41,46 @@ html, body {
 .cabecalho .nav__container .nav__titulo::before {
   content: url(../../../assets/img/icon/auto_awesome_black_24dp\ 1.svg);
 }
+.cabecalho .nav__container .lista-links {
+  display: none;
+}
 .cabecalho .nav__container .nav__email {
   font-weight: 700;
 }
+.cabecalho .nav__container .nav__email .nav-item {
+  text-decoration: none;
+}
 
+@media screen and (min-width: 1440px) {
+  .cabecalho .nav__container .nav__lista {
+    display: flex;
+    gap: 2rem;
+  }
+  .cabecalho .nav__container .nav__lista .lista-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+  .cabecalho .nav__container .nav__lista .lista-links .lista-item .link-item {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+  }
+  .cabecalho .nav__container .nav__lista .lista-links .lista-item .link-item:hover {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .cabecalho .nav__container .nav__lista .lista-links .lista-item .link-item:active {
+    color: rgb(103, 68, 68);
+  }
+  .cabecalho .nav__container .nav__lista .nav__email .link-p {
+    text-decoration: none;
+    color: black;
+  }
+  .cabecalho .nav__container .nav__lista .nav__email .link-p:hover {
+    text-decoration: underline;
+  }
+}
 .introducao {
   padding: 1rem 1rem;
   background-color: #fffafa;
@@ -74,7 +118,7 @@ html, body {
 
 @media screen and (min-width: 768px) {
   .introducao {
-    padding: 2rem 2rem;
+    padding: 1rem 2rem 3rem;
   }
   .introducao .introducao__img {
     float: right;
@@ -235,6 +279,7 @@ html, body {
 }
 .experiencia-profissional .experiencia__div-principal .experiencia__iamgem {
   width: 100%;
+  box-shadow: 2px 3px 6px grey;
 }
 .experiencia-profissional .experiencia__div-principal .experiencia__titulo-desafio {
   font-weight: 700;
@@ -287,7 +332,7 @@ html, body {
   background-color: #EAF2FD;
   padding: 1rem 2rem;
 }
-.contato .contato__imagem {
+.contato .contato__img {
   display: none;
 }
 .contato .contato__titulo {
@@ -352,8 +397,8 @@ html, body {
   .contato .contato__titulo {
     font-size: 32px;
   }
-  .contato .contato__imagem {
-    display: inline-block;
+  .contato .contato__img {
+    display: block;
   }
   .contato .contato__input {
     margin-bottom: 2rem;

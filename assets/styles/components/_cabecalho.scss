@@ -16,8 +16,63 @@
             }
         }
 
+        .lista-links{
+            display: none;
+        }
+
         .nav__email{
             font-weight: 700;
+            .nav-item{
+                text-decoration: none;
+            }
         }
     }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .cabecalho{
+        .nav__container{
+            .nav__lista{
+                display: flex;
+                gap: 2rem;
+
+                .lista-links{
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 2rem;
+
+                    .lista-item{
+                        .link-item{
+                            text-decoration: none;
+                            font-weight: 500;
+                            color: black;
+
+                            &:hover{
+                                font-weight: 700;
+                                text-decoration: underline;
+                            }
+
+                            &:active{
+                                color: rgb(103, 68, 68);
+                            }
+
+                        }
+                    }
+                }
+
+                .nav__email{
+                    .link-p{
+                        text-decoration: none;
+                        color: black;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }

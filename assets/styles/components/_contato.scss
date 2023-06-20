@@ -4,7 +4,7 @@
     background-color: $cor-de-fundo-azul;
     padding: 1rem 2rem;
 
-    .contato__imagem{
+    .contato__img{
         display: none;
     }
 
@@ -71,8 +71,8 @@
         }
         
      
-        .contato__imagem{
-            display: inline-block;
+        .contato__img{
+            display: block;
         }
         .contato__input{
             margin-bottom: 2rem;
