@@ -114,22 +114,22 @@
                     <p class="contato__descricao">Quer entrar em contato comigo? <br /> Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
                     <form action="">
                         <label for="nome"></label>
-                        <input class="contato__input" type="text" id="nome" required placeholder="Nome">
+                        <input class="contato__input" type="text" id="nome" required placeholder="Nome" minlength="3" maxlength="50">
     
         
                         <label for="email"></label>
-                        <input class="contato__input" type="email" id="email" required placeholder="E-mail">
+                        <input class="contato__input" type="email" id="email" required placeholder="E-mail" minlength="6">
     
                         <label for="assunto"></label>
-                        <input class="contato__input" type="text" id="assunto" required placeholder="Assunto">
+                        <input class="contato__input" type="text" id="assunto" required placeholder="Assunto" maxlength="50">
                        
     
                         <label for="mensagem"></label>
-                        <textarea class="contato__textarea" id="mensagem" cols="60" rows="10" required placeholder="Mensagem">
+                        <textarea class="contato__textarea" id="mensagem" cols="60" rows="10" required placeholder="Mensagem" maxlength="300">
                             
                         </textarea>
     
-                        <button class="contato__button" type="submit">Enviar mensagem</button>
+                        <button disabled class="contato__button" type="submit">Enviar mensagem</button>
                     </form>
                 </div>
             </section>
