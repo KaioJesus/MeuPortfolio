@@ -256,9 +256,10 @@ html {
 @media screen and (min-width: 768px) {
   .formacao-academica .formacao-academica__div-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .formacao-academica .formacao-academica__div-container .div-instituicao__img {
     height: 150px;

@@ -37,9 +37,10 @@
     .formacao-academica{
         .formacao-academica__div-container{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap;
 
             .div-instituicao__img{
                 height: 150px;
