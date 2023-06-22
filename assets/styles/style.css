@@ -370,40 +370,56 @@ html {
 }
 .contato .contato__input {
   display: block;
-  width: 100%;
+  width: 95%;
   height: 3rem;
-  margin: 1rem auto;
+  margin: 1rem 0;
   border-radius: 0.3rem;
   border: none;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 .contato .contato__input::-moz-placeholder {
-  padding: 0.5rem;
+  padding: 0.3rem 0.3rem;
   font-size: 12px;
   color: #A2A2A2;
 }
 .contato .contato__input::placeholder {
-  padding: 0.5rem;
+  padding: 0.3rem 0.3rem;
   font-size: 12px;
   color: #A2A2A2;
 }
+.contato .contato__input:focus::-moz-placeholder {
+  color: #2A7AE4;
+  font-weight: 500;
+}
+.contato .contato__input:focus::placeholder {
+  color: #2A7AE4;
+  font-weight: 500;
+}
 .contato .contato__textarea {
   display: block;
-  width: 100%;
+  width: 95%;
   margin: 1rem auto;
   border-radius: 0.3rem;
   border: none;
-  padding: 0 1rem;
+  padding: 0.4rem 0.5rem;
 }
 .contato .contato__textarea::-moz-placeholder {
-  padding: 0.5rem;
+  padding: 0.5rem 0.2rem;
   font-size: 12px;
   color: #A2A2A2;
 }
 .contato .contato__textarea::placeholder {
-  padding: 0.5rem;
+  padding: 0.5rem 0.2rem;
   font-size: 12px;
   color: #A2A2A2;
+}
+.contato .contato__textarea:focus::-moz-placeholder {
+  color: #2A7AE4;
+  font-weight: 500;
+}
+.contato .contato__textarea:focus::placeholder {
+  color: #2A7AE4;
+  font-weight: 500;
 }
 .contato .contato__button {
   color: white;
@@ -430,6 +446,7 @@ html {
   }
   .contato .contato__input {
     margin-bottom: 2rem;
+    padding: 0 0.7rem;
   }
   .contato .contato__button {
     border: none;
