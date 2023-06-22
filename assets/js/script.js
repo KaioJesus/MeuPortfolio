@@ -2,14 +2,8 @@ const inputsFormulario = document.querySelectorAll("[required]");
 
 inputsFormulario.forEach( (campo) => {
     campo.addEventListener("blur", () => verificaCampo(campo));
-    campo.addEventListener("invalid", evento => evento.preventDefault());
+    campo.addEventListener("invalid", (e) => e.preventDefault());
 })
-
-function verificaCampo (campo){
-    let mensagem = "";
-
-    tiposDeErro.forEach
-}
 
 const tiposDeErro = [
     'valueMissing', 
@@ -32,14 +26,34 @@ const mensagens = {
     },
 
     assunto: {
-        valueMissing: "O campo de e-mail não pode estar vazio.",
-        typeMismatch: "Por favor, preencha um email válido.",
-        tooShort: "Por favor, preencha um e-mail válido."
+        valueMissing: "O campo de assunto não pode estar vazio.",
     },
     mensagem: {
-        valueMissing: "O campo de e-mail não pode estar vazio.",
-        typeMismatch: "Por favor, preencha um email válido.",
-        tooShort: "Por favor, preencha um e-mail válido."
+        valueMissing: "O campo de mensagem não pode estar vazio.",
     },
 };
+
+function verificaCampo (campo){
+    let mensagem = "";
+
+    tiposDeErro.forEach((erro) => {
+        if(campo.validity[erro]){
+            mensagem = mensagens[campo.nome][erro];
+            console.log(mensagem);
+        }
+    })
+
+    const mensagemErro = campo.parentNode.querySelector(".mensagem-erro");
+    //parentNode faz ir só específico
+    const validadorDeInput = campo.checkValidity();
+
+    if(!validadorDeInput){
+        mensagem.textContent = mensagem;
+    } else{
+        mensagem = "";
+    }
+}
+
+
+
 

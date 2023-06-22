@@ -3,6 +3,7 @@
 .introducao{
     padding: 1rem 1rem;
     background-color: $cor-de-fundo-gelo;
+    height: 260px;
     .introducao__img{
         width: 6.125rem;
         height: 6.125rem;
@@ -31,6 +32,12 @@
                 font-weight: $peso-link;
                 color: $cor-link;
                 cursor: pointer;
+
+                .github{
+                    &::before{
+                        content: url(../../../assets/img/icon/github.png);
+                    }
+                }
     
                 &::after{
                 content: url(../../../assets/img/icon/Vector.svg);
@@ -51,6 +58,7 @@
 
     .introducao{
         padding: 1rem 2rem 3rem;
+        height: 150px;
 
         .introducao__img{
             float: right;
@@ -65,6 +73,7 @@
 
     .introducao{
         padding: 2rem 9.5rem 4rem;
+        height: 230px;
         
         .introducao__titulo{
             font-size: 3.25rem;

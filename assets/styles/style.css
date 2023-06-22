@@ -37,18 +37,21 @@ html {
 .cabecalho .nav__container .nav__titulo {
   font-size: 1.5rem;
   font-weight: 700;
+  padding-bottom: 0.5rem;
 }
 .cabecalho .nav__container .nav__titulo::before {
   content: url(../../../assets/img/icon/auto_awesome_black_24dp\ 1.svg);
 }
-.cabecalho .nav__container .lista-links {
+.cabecalho .nav__container .nav__lista .lista-links {
   display: none;
-}
-.cabecalho .nav__container .nav__email {
   font-weight: 700;
 }
-.cabecalho .nav__container .nav__email .nav-item {
+.cabecalho .nav__container .nav__lista .nav__email .link-p {
   text-decoration: none;
+  color: black;
+}
+.cabecalho .nav__container .nav__lista .nav__email .link-p:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1440px) {
@@ -84,6 +87,7 @@ html {
 .introducao {
   padding: 1rem 1rem;
   background-color: #fffafa;
+  height: 260px;
 }
 .introducao .introducao__img {
   width: 6.125rem;
@@ -108,6 +112,9 @@ html {
   color: black;
   cursor: pointer;
 }
+.introducao .lista-redes-sociais .item-lista-redes-sociais .link-lista-redes-sociais .github::before {
+  content: url(../../../assets/img/icon/github.png);
+}
 .introducao .lista-redes-sociais .item-lista-redes-sociais .link-lista-redes-sociais::after {
   content: url(../../../assets/img/icon/Vector.svg);
   margin-left: 0.3rem;
@@ -119,6 +126,7 @@ html {
 @media screen and (min-width: 768px) {
   .introducao {
     padding: 1rem 2rem 3rem;
+    height: 150px;
   }
   .introducao .introducao__img {
     float: right;
@@ -130,6 +138,7 @@ html {
 @media screen and (min-width: 1440px) {
   .introducao {
     padding: 2rem 9.5rem 4rem;
+    height: 230px;
   }
   .introducao .introducao__titulo {
     font-size: 3.25rem;
@@ -246,8 +255,14 @@ html {
 
 @media screen and (min-width: 768px) {
   .formacao-academica .formacao-academica__div-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+  }
+  .formacao-academica .formacao-academica__div-container .div-instituicao__img {
+    height: 150px;
+    width: 300px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -263,7 +278,12 @@ html {
     align-items: center;
   }
   .formacao-academica .formacao-academica__div-container .div-instituicao__img {
-    width: 100%;
+    height: 170px;
+    width: 310px;
+  }
+  .formacao-academica .formacao-academica__div-container .div-instituicao__img:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
   }
 }
 .experiencia-profissional {
@@ -390,6 +410,9 @@ html {
   width: 8rem;
   height: 3rem;
 }
+.contato .contato__button:active {
+  background-color: #054599;
+}
 
 @media screen and (min-width: 1440px) {
   .contato {
@@ -412,8 +435,11 @@ html {
   }
   .contato .contato__button:hover {
     cursor: pointer;
-    background-color: #12417e;
+    background-color: #1f5dad;
     transition: 0.2s;
+  }
+  .contato .contato__button:active {
+    background-color: #072c5c;
   }
 }
 .rodape {

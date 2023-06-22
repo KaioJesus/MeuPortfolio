@@ -34,8 +34,12 @@
                 <h2 class="introducao__titulo">Olá, meu nome é Kaio Jesus e construo páginas web</h2>
                 <p class="introducao__descricao">Sou estudande de Matemática pela UFRJ e atualmente estou participando no projeto Oracle ONE na Alura.</p>
                 <ul class="lista-redes-sociais">
-                    <li class="item-lista-redes-sociais"><a class="link-lista-redes-sociais" target="_blank" href="http://github.com/KaioJesus">Github</a> </li>
-                    <li class="item-lista-redes-sociais"><a class="link-lista-redes-sociais" target="_blank" href="https://www.linkedin.com/in/kaio-jesus/">Linkedin</a> </li>
+                    <li class="item-lista-redes-sociais">
+                        <a class="link-lista-redes-sociais github" target="_blank" href="http://github.com/KaioJesus">Github</a> 
+                    </li>
+                    <li class="item-lista-redes-sociais">
+                        <a class="link-lista-redes-sociais" target="_blank" href="https://www.linkedin.com/in/kaio-jesus/">Linkedin</a> 
+                    </li>
                     <li class="item-lista-redes-sociais"><a class="link-lista-redes-sociais" target="_blank" href="https://www.instagram.com/kaiojesus/">Instagram</a> </li>
                     <li class="item-lista-redes-sociais"><a class="link-lista-redes-sociais" target="_blank" href="https://docs.google.com/document/d/1_Vx5bnfPJxPrTutyfXrLvRgocg8ttan2Wx_LXesHeWg/edit?usp=sharing">Currículo</a> </li>
                 </ul>
@@ -96,6 +100,12 @@
             <section id="formacao-academica" class="formacao-academica">
                 <h2 class="formacao-academica__titulo">Formação acadêmica</h2>
                 <div class="formacao-academica__div-container">
+                    <div class="formacao-academica__div-container">
+                        <div class="formacao-academica__div-instituicao">
+                            <img class="div-instituicao__img" src="./assets/img/colegio-pedro-ii.png" alt="Imagem logo alura">
+                            <h3 class="div-instituicao__titulo">Ensino Médio Técnico em informática</h3>
+                            <p class="div-instituicao__descricao">2018 - CPII</p>
+                        </div>
                     <div class="formacao-academica__div-instituicao">
                         <img class="div-instituicao__img" src="./assets/img/alura.png" alt="Imagem logo alura">
                         <h3 class="div-instituicao__titulo">Formação Front-End</h3>
@@ -132,21 +142,23 @@
                     <form action="">
                         <label for="nome"></label>
                         <input class="contato__input" type="text" id="nome" required placeholder="Nome" minlength="3" maxlength="50">
+                        <span class="mensagem-erro"></span>
 
                         <!-- MinLength -> minimo de caracteres e o MaxLength -> máximo de caracteres -->
     
-        
                         <label for="email"></label>
                         <input class="contato__input" type="email" id="email" required placeholder="E-mail" minlength="6">
+                        <span class="mensagem-erro"></span>
     
                         <label for="assunto"></label>
                         <input class="contato__input" type="text" id="assunto" required placeholder="Assunto" maxlength="50">
+                        <span class="mensagem-erro"></span>
                        
     
                         <label for="mensagem"></label>
-                        <textarea class="contato__textarea" id="mensagem" cols="60" rows="10" required placeholder="Mensagem" maxlength="300">
-                            
+                        <textarea class="contato__textarea" id="mensagem" cols="60" rows="10" required placeholder="Mensagem" minlength="5" maxlength="300">
                         </textarea>
+                        <span class="mensagem-erro"></span>
     
                         <button  class="contato__button" type="submit">Enviar mensagem</button>
                     </form>

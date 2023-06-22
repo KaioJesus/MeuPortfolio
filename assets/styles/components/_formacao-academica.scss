@@ -36,8 +36,15 @@
 
     .formacao-academica{
         .formacao-academica__div-container{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            justify-content: center;
+
+            .div-instituicao__img{
+                height: 150px;
+                width: 300px;
+            }
         }
     }
 }
@@ -55,7 +62,13 @@
             justify-content: center;
             align-items: center;
             .div-instituicao__img{
-                width: 100%;
+                height: 170px;
+                width: 310px;
+
+                &:hover{
+                    transform: scale(1.1);
+                    transition: .2s;
+                }
             }
         } 
     }
