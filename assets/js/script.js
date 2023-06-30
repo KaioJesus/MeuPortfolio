@@ -36,23 +36,44 @@ const mensagens = {
 function verificaCampo (campo){
     let mensagem = "";
 
-    tiposDeErro.forEach((erro) => {
+    tiposDeErro.forEach(erro => {
         if(campo.validity[erro]){
             mensagem = mensagens[campo.nome][erro];
             console.log(mensagem);
         }
     })
 
-    const mensagemErro = campo.parentNode.querySelector(".mensagem-erro");
-    //parentNode faz ir só específico
+    const mensagemErro = campo.parentNode.querySelector('.mensagem-erro');
+    //parentNode serve para pegar o irmão que está do lado tag, pq senão pegaria todos os spans
     const validadorDeInput = campo.checkValidity();
 
     if(!validadorDeInput){
-        mensagem.textContent = mensagem;
+        mensagemErro.textContent = mensagem;
     } else{
-        mensagem = "";
+        mensagemErro.textContent = "";
     }
 }
+
+let inputs = document.querySelectorAll("contato__input");
+let textarea = document.querySelector(".contato__textarea");
+let button = document.querySelector(".contato__button");
+
+// function verificarInputs() {
+//     let todosPreenchidos = true;
+
+//     for (var i = 0; i < inputs.length; i++) {
+//         if (inputs[i].value && textarea.value === "") {
+//         todosPreenchidos = false;
+//         break;
+//         }
+//     }
+
+//     button.disabled = !todosPreenchidos;
+// }
+
+
+
+
 
 
 

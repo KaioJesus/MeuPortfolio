@@ -15,7 +15,8 @@
         // column-gap: 1.3rem;
         row-gap: 1.7rem;
         font-weight: 700;
-        justify-content: space-between;
+        text-align: center;
+        margin: 0 auto;
 
         .lista-item__redes-sociais{
          
@@ -23,7 +24,7 @@
             width: 90%;
             height: 140px;
             border-radius: 0.3rem;
-            box-shadow: 1px 1px 1px 1px #CCC;
+            box-shadow: 1px 1px 1px 2px #CCC;
             padding: 2rem 0.8rem 1rem 0.9rem;
             box-sizing: border-box;
             line-height: 1.3rem;

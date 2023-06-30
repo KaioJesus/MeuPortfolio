@@ -41,6 +41,7 @@
                 border: 1px solid #2A7AE4;;
                 color: #2A7AE4;
                 background-color: white;
+                box-shadow: 4px 4px 7px 2px rgb(152, 149, 149);;
                 &:hover{
                     background-color: rgb(215, 211, 211);
                     transition: .3s ease-in;
@@ -51,6 +52,7 @@
             .deploy{
                 color: white;
                 background-color: #2A7AE4;
+                box-shadow: 4px 4px 7px 2px rgb(152, 149, 149);
                 &:hover{
                     background-color: #064598;
                     transition: .3s ease-in;

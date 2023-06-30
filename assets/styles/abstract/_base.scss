@@ -15,8 +15,12 @@ html{
 
 //função para padronizar o título
 
-.cabecalho, .skills-e-hobbies, .formacao-academica, .experiencia-profissional, .contato, footer{
+.cabecalho, .formacao-academica, .experiencia-profissional, .contato, footer{
     padding: 1rem 1rem;
+}
+
+.skills-e-hobbies{
+    padding: 1rem 0rem 1rem 1.2rem;
 }
 
 @mixin padrao-h2{
@@ -25,8 +29,12 @@ html{
 }
 
 @media screen and (min-width: 768px) {
-    .cabecalho, .introducao, .sobre-mim, .skills-e-hobbies, .formacao-academica, .experiencia-profissional, .contato, .rodape{
+    .cabecalho, .introducao, .sobre-mim,  .formacao-academica, .experiencia-profissional, .contato, .rodape{
         padding: 1rem 2rem;
+    }
+
+    .skills-e-hobbies{
+        padding: 1rem 1rem 1rem 2rem;
     }
 
 }
