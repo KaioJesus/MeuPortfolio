@@ -1,14 +1,12 @@
 # MeuPortfolio
  
-# ChallengeAluraOracle - Codificador
-
- 
  Esta é uma página desenvolvida com a intenção de construir um portfólio pessoal e aprimorar cada vez mais minhas habilidades como desenvolvedor Front-end. <br>
 
  O desafio foi proposto pela Oracle + Alura.
 
  <br>
  
+ ![Preview](./assets/.github/preview.png)
  
  ## Conteúdos
 - [Descrição](#Descrição)
@@ -20,28 +18,11 @@
 
 ### Descrição
 
+Este desafio tem como objetivo a construção de um portfólio para que eu possa apresentar apresentar meus trabalhos mais relevantes e também de ser visto por recrutadores e desenvolvedores.
 
-A seguir o modelo utilizado para realizar a criptografia:<br>
->***A letra "e" é convertida para "enter"<br>
->A letra "i" é convertida para "imes"<br>
->A letra "a" é convertida para "ai"<br>
->A letra "o" é convertida para "ober"<br>
->A letra "u" é convertida para "ufat"***
+Neste site conta um pouco sobre mim, o que gosto de fazer, minhas habilidades, minha experiência acadêmica e um dos meus projetos feitos.
 
-Exemplo do que foi utilizado para a codificação:
-```
-    .replace(/imes/gi,'i')
-```
-
-#### Requisitos:
-- Deve funcionar apenas com letras minúsculas
-- Não devem ser utilizados letras com acentos nem caracteres especiais
-- Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
-
-Por exemplo:
->"gato" => "gaitober" <br>
->gaitober" => "gato"
-
+Sinta-se a vontade para entrar em contato comigo!
 
 ### Telas
 
@@ -73,7 +54,9 @@ Com este desafio aprendi:
 - A utilizar o método forEach;
 - Novos atributos de validação no HTML;
 - A fazer validação de formulário com JavaScript usando o validityState;
-- Utilizar um pouco do display grid.
+- Aprimorar mais o uso do pré-processador SaSS;
+- Praticar o display grid;
+- Novos pseudoelementos e como utilizá-los;
 
 ### ✉ Contato 
 
