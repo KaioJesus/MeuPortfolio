@@ -145,26 +145,26 @@
                     <p class="contato__descricao">Quer entrar em contato comigo? <br /> Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
                     <form action="">
                         <label for="nome"></label>
-                        <input class="contato__input" type="text" id="nome" required placeholder="Nome" minlength="3" maxlength="50">
+                        <input name="nome" class="contato__input" type="text" id="nome" required placeholder="Nome" minlength="3" maxlength="50">
                         <span class="mensagem-erro"></span>
 
                         <!-- MinLength -> minimo de caracteres e o MaxLength -> máximo de caracteres -->
-    
                         <label for="email"></label>
-                        <input class="contato__input" type="email" id="email" required placeholder="E-mail" minlength="6">
+                        <input name="email" class="contato__input" type="email" id="email" required placeholder="E-mail" minlength="6">
                         <span class="mensagem-erro"></span>
     
                         <label for="assunto"></label>
-                        <input class="contato__input" type="text" id="assunto" required placeholder="Assunto" maxlength="50">
+                        <input name="assunto" class="contato__input" type="text" id="assunto" required placeholder="Assunto" maxlength="50">
                         <span class="mensagem-erro"></span>
                        
     
                         <label for="mensagem"></label>
-                        <textarea class="contato__textarea" id="mensagem" cols="70" rows="10" required placeholder="Mensagem" minlength="5" maxlength="300"></textarea>
+                        <textarea name="mensagem" class="contato__textarea" id="mensagem" cols="70" rows="10" required placeholder="Mensagem" minlength="5" maxlength="300"></textarea>
                         <!-- estava perdendo meu tempo com esse textarea porque o fechamento tem que estar na mesma linha que a abertura, senão não aparece o placeholder e pode clicar e digitar em qualquer lugar da area -->
                         <span class="mensagem-erro"></span>
     
-                        <button disabled class="contato__button" type="submit">Enviar mensagem</button>
+                        <button class="contato__button" type="submit">Enviar mensagem</button>
+                        <span class="mensagem-erro"></span>
                     </form>
                 </div>
             </section>

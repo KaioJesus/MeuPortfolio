@@ -400,6 +400,7 @@ html {
 .contato .contato__input:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
+  transition: 0.15s;
   border-bottom: 3px solid #2A7AE4;
 }
 .contato .contato__input:focus::-moz-placeholder {
@@ -449,6 +450,10 @@ html {
 }
 .contato .contato__button:active {
   background-color: #054599;
+}
+.contato .mensagem-erro {
+  color: red;
+  font-size: 0.7rem;
 }
 
 @media screen and (min-width: 1440px) {

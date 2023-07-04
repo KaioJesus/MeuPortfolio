@@ -1,7 +1,22 @@
 const inputsFormulario = document.querySelectorAll("[required]");
+const formulario = document.querySelector("[data-formulario]");
+
+// formulario.addEventListener("submit", (e) => {
+//     e.preventDefault();
+
+//     const listaRespostas  ={
+//         "nome": e.target.elements["nome"].value,
+//         "email": e.target.elements["email"].value,
+//         "assunto": e.target.elements["assunto"].value,
+//         "mensagems": e.target.elements["mensagem"].value,
+//     }
+
+//     localStorage.setItem("cadastro", JSON.stringify(listaRespostas));
+// })
 
 inputsFormulario.forEach( (campo) => {
     campo.addEventListener("blur", () => verificaCampo(campo));
+    //blur quando tira o foco do input
     campo.addEventListener("invalid", (e) => e.preventDefault());
 })
 
@@ -10,7 +25,6 @@ const tiposDeErro = [
     'typeMismatch', 
     'patternMismatch', 
     'tooShort', 
-    'customError'
 ];
 
 const mensagens = {
@@ -33,12 +47,12 @@ const mensagens = {
     },
 };
 
-function verificaCampo (campo){
+function verificaCampo(campo){
     let mensagem = "";
-
     tiposDeErro.forEach(erro => {
         if(campo.validity[erro]){
-            mensagem = mensagens[campo.nome][erro];
+            mensagem = mensagens[campo.name][erro];
+            //name é o nome dado lá no html
             console.log(mensagem);
         }
     })
@@ -52,24 +66,9 @@ function verificaCampo (campo){
     } else{
         mensagemErro.textContent = "";
     }
+    console.log(campo.validity);
 }
 
-let inputs = document.querySelectorAll("contato__input");
-let textarea = document.querySelector(".contato__textarea");
-let button = document.querySelector(".contato__button");
-
-// function verificarInputs() {
-//     let todosPreenchidos = true;
-
-//     for (var i = 0; i < inputs.length; i++) {
-//         if (inputs[i].value && textarea.value === "") {
-//         todosPreenchidos = false;
-//         break;
-//         }
-//     }
-
-//     button.disabled = !todosPreenchidos;
-// }
 
 
 
