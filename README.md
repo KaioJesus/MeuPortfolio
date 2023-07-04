@@ -24,7 +24,7 @@ Neste site conta um pouco sobre mim, o que gosto de fazer, minhas habilidades, m
 
 Sinta-se a vontade para entrar em contato comigo!
 
-### Telas
+### 💻 Telas
 
 #### PC min-width 1440px
 ![PC results](./assets/.github/tela_pc.png)
@@ -36,12 +36,12 @@ Sinta-se a vontade para entrar em contato comigo!
 ![Cell results](./assets/.github/tela_celular.png)
 
 
-### Link
+### 🔗 Link
 
 [Solution URL](https://meu-portfolio-seven-mu.vercel.app/)
 
 
-### Ferramentas
+### 🛠️ Ferramentas
 
 - HTML 5
 - CSS; SaSS
