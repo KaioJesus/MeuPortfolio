@@ -1,18 +1,18 @@
 const inputsFormulario = document.querySelectorAll("[required]");
 const formulario = document.querySelector("[data-formulario]");
 
-// formulario.addEventListener("submit", (e) => {
-//     e.preventDefault();
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-//     const listaRespostas  ={
-//         "nome": e.target.elements["nome"].value,
-//         "email": e.target.elements["email"].value,
-//         "assunto": e.target.elements["assunto"].value,
-//         "mensagems": e.target.elements["mensagem"].value,
-//     }
+    const listaRespostas  ={
+        "nome": e.target.elements["nome"].value,
+        "email": e.target.elements["email"].value,
+        "assunto": e.target.elements["assunto"].value,
+        "mensagem": e.target.elements["mensagem"].value,
+    }
 
-//     localStorage.setItem("cadastro", JSON.stringify(listaRespostas));
-// })
+    localStorage.setItem("cadastro", JSON.stringify(listaRespostas));
+})
 
 inputsFormulario.forEach( (campo) => {
     campo.addEventListener("blur", () => verificaCampo(campo));

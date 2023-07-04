@@ -382,7 +382,7 @@ html {
   display: block;
   width: 100%;
   height: 3rem;
-  margin: 1rem auto;
+  margin: 8px auto;
   border-radius: 0.3rem;
   border: none;
   padding: 0 0.5rem;
@@ -414,7 +414,7 @@ html {
 .contato .contato__textarea {
   display: block;
   width: 100%;
-  margin: 1rem auto;
+  margin: 8px auto;
   border-radius: 0.3rem;
   border: none;
   padding: 0.4rem 0.5rem;
@@ -445,6 +445,7 @@ html {
 .contato .contato__button {
   color: white;
   background-color: #2A7AE4;
+  margin-top: 8px;
   width: 8rem;
   height: 3rem;
 }
@@ -470,11 +471,15 @@ html {
     display: block;
   }
   .contato .contato__input {
-    margin-bottom: 2rem;
-    padding: 0 0.7rem;
+    margin-bottom: 5px;
+    padding: 0 12px;
+  }
+  .contato .contato__textarea {
+    margin-bottom: 5px;
   }
   .contato .contato__button {
     border: none;
+    margin-top: 32px;
   }
   .contato .contato__button:hover {
     cursor: pointer;
