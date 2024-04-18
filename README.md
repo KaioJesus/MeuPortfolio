@@ -10,8 +10,8 @@
  
  ## Conteúdos
 - [Descrição](#Descrição)
-- [Telas](#Telas)
 - [Links](#Links)
+- [Telas](#Telas)
 - [Ferramentas](#Ferramentas)
 - [Aprendizado](#Aprendizado)
 - [Contato](#Contato)
@@ -24,6 +24,10 @@ Neste site conta um pouco sobre mim, o que gosto de fazer, minhas habilidades, m
 
 Sinta-se a vontade para entrar em contato comigo!
 
+### 🔗 Link
+
+[Solution URL](https://meu-portfolio-seven-mu.vercel.app/)
+
 ### 💻 Telas
 
 #### PC min-width 1440px
@@ -34,11 +38,6 @@ Sinta-se a vontade para entrar em contato comigo!
 
 #### Smartphones
 ![Cell results](./assets/.github/tela_celular.png)
-
-
-### 🔗 Link
-
-[Solution URL](https://meu-portfolio-seven-mu.vercel.app/)
 
 
 ### 🛠️ Ferramentas
