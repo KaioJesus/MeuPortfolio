@@ -1,18 +1,15 @@
 const inputsFormulario = document.querySelectorAll("[required]");
 const formulario = document.querySelector("[data-formulario]");
 
-// formulario.addEventListener("submit", e => {
-//     e.preventDefault();
-//     console.log('ola');
-// })
-
 inputsFormulario.forEach( (campo) => {
     campo.addEventListener("blur", () => verificaCampo(campo));
     //blur quando tira o foco do input
     campo.addEventListener("invalid", (e) => e.preventDefault());
+    //para não aparecer o popup do required do HTML
 })
 
 const tiposDeErro = [
+    //tipos de erro do validity state
     'valueMissing', 
     'typeMismatch', 
     'patternMismatch', 

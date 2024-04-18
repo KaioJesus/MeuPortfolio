@@ -57,6 +57,7 @@ Com este desafio aprendi:
 - Aprimorar mais o uso do pré-processador SaSS;
 - Praticar o display grid;
 - Novos pseudoelementos e como utilizá-los;
+- Usar o 'Scroll-behavior' para navegação mais suave;
 
 ### ✉ Contato 
 
